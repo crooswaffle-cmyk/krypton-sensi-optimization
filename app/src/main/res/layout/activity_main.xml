@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0a0a0a"
+    android:padding="20dp">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:paddingBottom="30dp">
+
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:contentDescription="Logo"
+            android:src="@drawable/ic_launcher_foreground"
+            android:tint="#00d4ff" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KRYPTON SENSI"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#00d4ff"
+            android:paddingTop="15dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PAINEL DE OTIMIZAÇÃO"
+            android:textSize="14sp"
+            android:textColor="#666666"
+            android:paddingTop="5dp" />
+    </LinearLayout>
+
+    <!-- Info Cards -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_background"
+        android:padding="15dp"
+        android:layout_marginBottom="15dp">
+
+        <TextView
+            android:id="@+id/tv_ram_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#00d4ff"
+            android:textSize="14sp"
+            android:text="📊 RAM: Carregando..."
+            android:lineSpacingExtra="8dp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_background"
+        android:padding="15dp"
+        android:layout_marginBottom="30dp">
+
+        <TextView
+            android:id="@+id/tv_device_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#00d4ff"
+            android:textSize="14sp"
+            android:text="📱 Dispositivo: Carregando..."
+            android:lineSpacingExtra="8dp" />
+    </FrameLayout>
+
+    <!-- Progress Bar (oculto por padrão) -->
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Botões -->
+    <Button
+        android:id="@+id/btn_optimize"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="⚡ OTIMIZAR AGORA"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:background="@drawable/btn_primary"
+        android:layout_marginBottom="12dp"
+        android:stateListAnimator="@null" />
+
+    <Button
+        android:id="@+id/btn_open_ff"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="🎮 ABRIR FREE FIRE"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:background="@drawable/btn_secondary" />
+</LinearLayout>
